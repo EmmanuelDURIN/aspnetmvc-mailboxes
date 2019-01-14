@@ -10,13 +10,17 @@ namespace MailBox.Controllers
   {
     public ActionResult Index()
     {
-      return View();
+      // la date peut être passée par :
+      //    -1) ViewData/ViewBag
+      ViewBag.Date = DateTime.Now;
+      //    OU
+      //    -2) Model
+      return View(model : DateTime.Now);
     }
 
     public ActionResult About()
     {
       ViewBag.Message = "Your application description page.";
-
       return View();
     }
 
