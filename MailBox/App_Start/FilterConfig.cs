@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace MailBox
+namespace MailBoxManager
 {
   public class FilterConfig
   {

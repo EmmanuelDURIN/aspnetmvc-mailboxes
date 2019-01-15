@@ -4,12 +4,15 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace MailBox.Controllers
+namespace MailBoxManager.Controllers
 {
   public class HomeController : Controller
   {
     public ActionResult Index()
     {
+      int y = 1;
+
+      y++;
       // la date peut être passée par :
       //    -1) ViewData/ViewBag
       ViewBag.Date = DateTime.Now;
