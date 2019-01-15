@@ -1,4 +1,5 @@
 ﻿using MailBoxManager.Models;
+using System.Linq;
 using System.Web.Mvc;
 
 namespace MailBoxManager.Controllers
@@ -6,18 +7,14 @@ namespace MailBoxManager.Controllers
   public class MailBoxController : Controller
   {
     // GET: MailBox
-    public ActionResult Index(string reference)
+    public ActionResult Reference(string reference)
     {
-      MailBox mailbox = new MailBox
+      MailBox mailbox = null;
+      using (var context = new MailBoxContext())
       {
-        Name="Sunset mailbox",
-        Width=200,
-        Height=180,
-        Depth=200,
-        Reference=reference,
-        Color ="Red",
-        ImagePath="/Images/mailbox1.jpg"
-      };
+        mailbox = context.MailBoxes.FirstOrDefault(
+             mb => mb.Reference.ToUpper() == reference.ToUpper());
+      }
       // transmettre la mailbox en tant que modele de la vue
       return View(model : mailbox);
     }

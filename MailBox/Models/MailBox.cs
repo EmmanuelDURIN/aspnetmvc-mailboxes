@@ -7,13 +7,8 @@ namespace MailBoxManager.Models
 {
   public class MailBox
   {
-    //Reference : string
-    //Name : string
-    //Color : String
-    //Height : double
-    //Width : double
-    //Depth : double
-    //ImagePath : string
+    public int Id { get; set; }
+
     public string Reference { get; set; }
     public string Name { get; set; }
     public string Color { get; set; }

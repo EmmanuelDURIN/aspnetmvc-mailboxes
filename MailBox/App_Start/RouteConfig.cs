@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MailBoxManager.Controllers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -19,7 +20,7 @@ namespace MailBoxManager
         url: "boites-aux-lettres/{reference}",
         defaults: new {
           controller = "MailBox",
-          action = "Index",
+          action = nameof(MailBoxController.Reference),
           reference = "X425" }
       );
       // Route classique, inchangée = catch-all
