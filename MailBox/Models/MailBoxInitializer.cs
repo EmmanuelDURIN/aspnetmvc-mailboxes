@@ -6,8 +6,10 @@ using System.Web;
 
 namespace MailBoxManager.Models
 {
+  // Responsabilité : initialiser le context (=la base) avec qq données
   public class MailBoxInitializer : DropCreateDatabaseAlways<MailBoxContext>
   {
+    // Seed = planter, ensemencer
     protected override void Seed(MailBoxContext context)
     {
       base.Seed(context);

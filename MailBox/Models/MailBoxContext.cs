@@ -7,6 +7,7 @@ using System.Web;
 
 namespace MailBoxManager.Models
 {
+  // Responsabilité: DbContext lire et écrire nos Entités dans la DB
   public class MailBoxContext : DbContext
   {
     public MailBoxContext()
@@ -19,6 +20,8 @@ namespace MailBoxManager.Models
       // On veut logger les requêtes SQL passées par EFx sur la DB
       this.Database.Log = text => Debug.WriteLine(text);
     }
+    // pour chaque entité {classe <---> table} on expose un DbSet
+    // qui permet de requêter
     public DbSet<MailBox> MailBoxes { get; set; }
   }
 }

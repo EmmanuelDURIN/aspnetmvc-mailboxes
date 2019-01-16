@@ -18,6 +18,7 @@ namespace MailBoxManager
       RouteConfig.RegisterRoutes(RouteTable.Routes);
       BundleConfig.RegisterBundles(BundleTable.Bundles);
 
+      // enregistrer l'initializer avec le contexte
       System.Data.Entity.Database.SetInitializer<MailBoxContext>(
                                       new MailBoxInitializer());
 

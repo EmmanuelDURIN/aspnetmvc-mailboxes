@@ -21,22 +21,22 @@
     <span>, voici nos supers promos :</span>
     <ul>
         <li>@Html.ActionLink(
-        linkText:"Indémodable boite X425",
+        linkText:"Indémodable boite X625",
         actionName:nameof(MailBoxController.Reference),
         controllerName:"MailBox",
-        routeValues:new {reference="X425" },
+        routeValues:new {reference="X625" },
         htmlAttributes: new { }
         )
     </li>
     <li>@Html.RouteLink(
      routeName: "boitesAuxLettres",
-    linkText:"Indémodable boite X426",
+    linkText:"Indémodable boite X626",
     routeValues:
     // utilisation d'un objet anonyme :new {...} 
     // pour passer les paramètres de la route
     new {
         controller="MailBox",
-        action =nameof(MailBoxController.Reference), reference ="X426"
+        action =nameof(MailBoxController.Reference), reference ="X626"
     }
     )
     </li>
