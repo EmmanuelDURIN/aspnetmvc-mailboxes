@@ -184,7 +184,12 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\MailBox\Reference.cshtml" />
+    <Content Include="Views\MailBox\Details.cshtml" />
+    <Content Include="Views\MailBox\Create.cshtml" />
+    <Content Include="Views\MailBox\Delete.cshtml" />
+    <Content Include="Views\MailBox\DetailsOld.cshtml" />
+    <Content Include="Views\MailBox\Edit.cshtml" />
+    <Content Include="Views\MailBox\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
