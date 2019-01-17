@@ -187,7 +187,6 @@
     <Content Include="Views\MailBox\Details.cshtml" />
     <Content Include="Views\MailBox\Create.cshtml" />
     <Content Include="Views\MailBox\Delete.cshtml" />
-    <Content Include="Views\MailBox\DetailsOld.cshtml" />
     <Content Include="Views\MailBox\Edit.cshtml" />
     <Content Include="Views\MailBox\Index.cshtml" />
   </ItemGroup>

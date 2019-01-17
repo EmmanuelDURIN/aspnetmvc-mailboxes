@@ -45,7 +45,6 @@ namespace MailBoxManager.Controllers
       }
       return View(mailBox);
     }
-
     // GET: MailBox/Create
     public ActionResult Create()
     {
